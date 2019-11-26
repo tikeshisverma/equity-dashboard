@@ -6,7 +6,7 @@
     </div>
     <div class="details" v-if="companyData && !isLoading">
       <div class="card">
-        <h3>Company Info</h3>
+        <h3>Company information</h3>
         <div class="error" v-if="!Object.keys(companyData.info).length">Sorry no data found.</div>
         <ul>
           <li v-for="(value, key) in companyData.info" :key="key">
@@ -17,7 +17,7 @@
       </div>
 
       <div class="card">
-        <h3>Company Action</h3>
+        <h3>Corporate Actions</h3>
         <div class="error" v-if="!Object.keys(companyData.action).length">Sorry no data found.</div>
         <ul>
           <li v-for="(value, key) in companyData.action" :key="key">
@@ -28,7 +28,7 @@
       </div>
 
       <div class="card">
-        <h3>Company Announcement</h3>
+        <h3>Announcements</h3>
         <div class="error" v-if="!Object.keys(companyData.announce).length">Sorry no data found.</div>
         <ul>
           <li v-for="(value, key) in companyData.announce" :key="key">
